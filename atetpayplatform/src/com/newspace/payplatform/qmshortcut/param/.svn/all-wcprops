@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param
+END
+GetDynNumReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/GetDynNumReq.java
+END
+FirstQuickPaymentResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/FirstQuickPaymentResp.java
+END
+QuickPaymentResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QuickPaymentResp.java
+END
+QueryBoundCardReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QueryBoundCardReq.java
+END
+QueryCardInfoReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QueryCardInfoReq.java
+END
+UnbindCardReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/UnbindCardReq.java
+END
+QueryBoundCardResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QueryBoundCardResp.java
+END
+QueryCardIfnoResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QueryCardIfnoResp.java
+END
+UnbindCardResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/UnbindCardResp.java
+END
+FirstQuickPaymentReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/FirstQuickPaymentReq.java
+END
+QuickPaymentReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/QuickPaymentReq.java
+END
+GetDynNumResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/param/GetDynNumResp.java
+END

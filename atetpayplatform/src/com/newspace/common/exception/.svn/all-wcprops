@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/exception
+END
+BaseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/exception/BaseException.java
+END
+DaoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/exception/DaoException.java
+END
+BoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/exception/BoException.java
+END

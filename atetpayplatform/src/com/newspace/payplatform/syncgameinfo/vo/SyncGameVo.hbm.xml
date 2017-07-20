@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>												   					
+	<class name="com.newspace.payplatform.syncgameinfo.vo.SyncGameVo" table="t_payplatform_syncGame">
+		<id name="id" >
+			<column name="id" />
+			<generator class="sequence">
+				<param name="sequence">seq_payplatform_syncGame_id</param>
+			</generator>
+		</id>
+		
+		<property name="appId" type="string"/>
+		<property name="gameId" type="string"/>
+		<property name="cpId" type="string"/>
+		<property name="gameName" type="string"/>
+		<property name="packageName" type="string"/>
+		<property name="gameCreateTime" type="timestamp"/>
+		<property name="createTime" type="timestamp"/>
+		
+	</class>
+</hibernate-mapping>

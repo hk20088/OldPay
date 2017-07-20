@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice
+END
+SmMsgPrx.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/SmMsgPrx.java
+END
+MoHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MoHolder.java
+END
+_SmMsgDelM.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgDelM.java
+END
+_SmMsgDisp.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgDisp.java
+END
+_SmMsgOperationsNC.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgOperationsNC.java
+END
+Callback_SmMsg_OnMtResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Callback_SmMsg_OnMtResp.java
+END
+Mt.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Mt.java
+END
+MtReportHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MtReportHolder.java
+END
+SmMsg.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/SmMsg.java
+END
+Callback_SmMsg_OnReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Callback_SmMsg_OnReport.java
+END
+MtRespHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MtRespHolder.java
+END
+_SmMsgDel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgDel.java
+END
+Mo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Mo.java
+END
+_SmMsgDelD.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgDelD.java
+END
+SmMsgPrxHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/SmMsgPrxHelper.java
+END
+MtReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MtReport.java
+END
+SmMsgPrxHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/SmMsgPrxHolder.java
+END
+Callback_SmMsg_OnMt.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Callback_SmMsg_OnMt.java
+END
+Callback_SmMsg_Login.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Callback_SmMsg_Login.java
+END
+MtResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MtResp.java
+END
+_SmMsgOperations.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/_SmMsgOperations.java
+END
+Callback_SmMsg_OnMo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/Callback_SmMsg_OnMo.java
+END
+MtHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/MtHolder.java
+END
+SmMsgHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/SmMsgHolder.java
+END
+strConentSeqHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/strConentSeqHelper.java
+END
+strConentSeqHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ice/strConentSeqHolder.java
+END

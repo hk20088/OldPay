@@ -1,0 +1,3 @@
+--绑定手机号表t_payplatform_bindTel新增lastSendTime字段
+alter table t_payplatform_bindTel add lastSendTime date;
+commit;

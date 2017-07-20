@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/proxy
+END
+BaseProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/proxy/BaseProxy.java
+END
+CGLIBProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/proxy/CGLIBProxy.java
+END
+JVMProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/common/proxy/JVMProxy.java
+END

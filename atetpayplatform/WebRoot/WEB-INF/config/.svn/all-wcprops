@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/WebRoot/WEB-INF/config
+END
+sessionfactory-bean.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/WebRoot/WEB-INF/config/sessionfactory-bean.xml
+END
+aop-bean.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/WebRoot/WEB-INF/config/aop-bean.xml
+END
+dao-bean.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/WebRoot/WEB-INF/config/dao-bean.xml
+END
+bo-bean.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/WebRoot/WEB-INF/config/bo-bean.xml
+END

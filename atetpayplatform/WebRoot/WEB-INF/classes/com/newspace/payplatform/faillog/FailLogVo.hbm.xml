@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>												   					
+	<class name="com.newspace.payplatform.faillog.FailLogVo" table="t_payplatform_failLog">
+		<id name="id" >
+			<column name="id" />
+			<generator class="sequence">
+				<param name="sequence">seq_payplatform_failLog_id</param>
+			</generator>
+		</id>
+		
+		<property name="failCode" type="integer"/>
+		<property name="operaType" type="integer"/>
+		<property name="failDesc" type="string"/>
+		<property name="receivedDataMsg" type="string"/>
+		<property name="receivedSignMsg" type="string"/>
+		<property name="logTime" type="timestamp"/>
+		<property name="payOrderId" type="string"/>
+	</class>
+</hibernate-mapping>

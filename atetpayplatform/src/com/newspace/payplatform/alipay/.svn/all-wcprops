@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/alipay
+END
+ReceiveAlipayNotifyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/alipay/ReceiveAlipayNotifyServlet.java
+END
+AlipayNotifyUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/alipay/AlipayNotifyUtils.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut
+END
+CertSignUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/CertSignUtils.java
+END
+QMQuickPaymentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/QMQuickPaymentServlet.java
+END
+QMShortcutUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/QMShortcutUtils.java
+END
+QueryCardInfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/QueryCardInfoServlet.java
+END
+UnbindCardServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/UnbindCardServlet.java
+END
+FirstQuickPaymentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/FirstQuickPaymentServlet.java
+END
+PostProcesser.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/PostProcesser.java
+END
+ReceiveTR3AndSendTR4Servlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/ReceiveTR3AndSendTR4Servlet.java
+END
+GetDynNumServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/GetDynNumServlet.java
+END
+QueryBoundCardInfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/QueryBoundCardInfoServlet.java
+END

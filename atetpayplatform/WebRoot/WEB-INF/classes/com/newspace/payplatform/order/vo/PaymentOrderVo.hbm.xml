@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>												   					
+	<class name="com.newspace.payplatform.order.vo.PaymentOrderVo" table="t_payplatform_order">
+		<id name="id" >
+			<column name="id" />
+			<generator class="sequence">
+				<param name="sequence">seq_payplatform_order_id</param>
+			</generator>
+		</id>
+		
+		<property name="partnerId" type="string"/>
+		<property name="cpId" type="string"/>
+		<property name="orderNo" type="string"/>
+		<property name="userId" type="integer"/>
+		<property name="atetId" type="string"/>
+		<property name="deviceId" type="string"/>
+		<property name="productId" type="string"/>
+		<property name="deviceCode" type="string"/>
+		<property name="deviceType" type="integer"/>
+		<property name="channelId" type="string"/>
+		<property name="cpOrderNo" type="string"/>
+		<property name="appId" type="string"/>
+		<property name="packageName" type="string"/>
+		<property name="gameName" type="string"/>
+		<property name="payPoint" type="string"/>
+		<property name="payPointName" type="string"/>
+		<property name="payPointMoney" type="integer"/>
+		<property name="counts" type="integer"/>
+		<property name="amount" type="integer"/>
+		<property name="amountType" type="integer"/>
+		<property name="payType" type="integer"/>
+		<property name="createTime" type="timestamp"/>
+		<property name="updateTime" type="timestamp"/>
+		<property name="versionCode" type="string"/>
+		<property name="isScanPay" type="integer"/>
+		<property name="isSendGood" type="integer"/>
+		<property name="state" type="integer"/>
+		<property name="clientIP" type="string"/>
+		<property name="telephone" type="string"/>
+		<property name="commandid" type="string"/>
+		<property name="channelShortCode" type="string"/>
+		
+		<property name="paymentCreatedOrderNo" type="string"/>
+	</class>
+</hibernate-mapping>

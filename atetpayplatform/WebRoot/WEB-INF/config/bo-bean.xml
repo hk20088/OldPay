@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  					  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean name="baseBo" class="com.newspace.common.bo.impl.GenericBoImpl" abstract="true" />
+	
+	<bean name="defaultBo" class="com.newspace.payplatform.base.DefaultBoImpl" parent="baseBo"/>
+
+	<bean name="secretKeyBo" class="com.newspace.payplatform.secretkey.bo.impl.SecretKeyBoImpl" parent="baseBo"/>
+	
+	<bean name="paymentOrderBo" class="com.newspace.payplatform.order.bo.impl.PaymentOrderBoImpl" parent="baseBo"/>
+	
+	<bean name="bindTelephoneBo" class="com.newspace.payplatform.bindtelephone.bo.impl.BindTelephoneBoImpl" parent="baseBo"/>
+	
+	<bean name="payPointBo" class="com.newspace.payplatform.paypoint.bo.impl.PayPointBoImpl" parent="baseBo"/>
+	
+	<bean name="syncDeviceBo" class="com.newspace.payplatform.syncdevice.bo.impl.SyncDeviceBoImpl" parent="baseBo"/>
+	
+	<bean name="syncGameBo" class="com.newspace.payplatform.syncgameinfo.bo.impl.SyncGameBoImpl" parent="baseBo"/>
+	
+	<bean name="payTypeBo" class="com.newspace.payplatform.paytype.bo.impl.PayTypeBoImpl" parent="baseBo"/>
+</beans>  					

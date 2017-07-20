@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp
+END
+UnicomPayServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp/UnicomPayServlet.java
+END
+UnicomNotifyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/6317/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp/UnicomNotifyServlet.java
+END
+HttpReceiveMsg.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp/HttpReceiveMsg.java
+END
+HttpSendMsgTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp/HttpSendMsgTask.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomhttp/Test.java
+END

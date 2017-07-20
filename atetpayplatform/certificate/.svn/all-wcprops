@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/certificate
+END
+81231007375005090.jks
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/certificate/81231007375005090.jks
+END
+81231007375005090.pfx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/certificate/81231007375005090.pfx
+END
+81231007375005090.pem
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/certificate/81231007375005090.pem
+END
+mgw.cer
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/certificate/mgw.cer
+END

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 配置context-param -->
+	<!-- 指定Spring文件的位置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			WEB-INF/config/**/*.xml
+			file:${user.dir}/atetpayplatform/config/**/*-config.xml
+		</param-value>
+	</context-param>
+	<context-param>
+  		<param-name>webAppRootKey</param-name>
+  		<param-value>atetpayplatform</param-value>
+  	</context-param>
+  	<context-param>  
+        <param-name>log4jConfigLocation</param-name>  
+        <param-value>file:${user.dir}/atetpayplatform/config/log4j.xml</param-value>  
+    </context-param>  
+    <context-param>  
+        <param-name>log4jRefreshInterval</param-name>  
+        <param-value>3000</param-value>  
+    </context-param>
+	
+	<!-- 通过spring加载log4j配置 -->
+  	<listener>
+    	<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+  	</listener>
+  	<!-- 加载context-param中指定的spring配置文件 -->
+	<listener>
+		<listener-class>com.newspace.common.spring.SpringContextLoaderListener</listener-class>
+	</listener>
+	<!-- spring框架的listener，使spring bean可配置scope为request、session等 -->
+	<listener>
+		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+	</listener>
+	<!-- 解决懒加载问题 -->
+	<filter>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+	<!-- 编码过滤器 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 初始化接口 -->
+	<servlet>
+	  <servlet-name>StartupServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.StartupServlet</servlet-class>
+	  <load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<!-- 接口开始  -->
+
+  	<!-- 终端查询用户订单信息 -->
+	<servlet>
+	  <servlet-name>TerminalQueryOrderServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.order.TerminalQueryOrderServlet</servlet-class>
+	</servlet>
+    <servlet-mapping>
+      <servlet-name>TerminalQueryOrderServlet</servlet-name>
+      <url-pattern>/queryUserOrder.do</url-pattern>
+    </servlet-mapping>
+
+	<!-- 获取密钥接口 -->
+	<servlet>
+	  <servlet-name>SecretKeyServiceServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.secretkey.SecretKeyServiceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>SecretKeyServiceServlet</servlet-name>
+	  <url-pattern>/secretKey.do</url-pattern>
+	</servlet-mapping>
+    
+  	<!-- 同步CP信息接口 -->
+  	<servlet>
+  		<servlet-name>SyncCpInfoServlet</servlet-name>
+  		<servlet-class>com.newspace.payplatform.secretkey.web.SyncCpInfoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>SyncCpInfoServlet</servlet-name>
+  		<url-pattern>/cpInfo.do</url-pattern>
+  	</servlet-mapping>
+
+	<!-- 同步设备信息接口 -->
+	<servlet>
+		<servlet-name>SyncDeviceServlet</servlet-name>
+		<servlet-class>com.newspace.payplatform.syncdevice.web.SyncDeviceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SyncDeviceServlet</servlet-name>
+		<url-pattern>/deviceInfo.do</url-pattern>
+	</servlet-mapping>
+
+    <!-- 请求令牌接口 -->
+    <servlet>
+    	<servlet-name>tokenServlet</servlet-name>
+    	<servlet-class>com.newspace.payplatform.token.web.TokenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>tokenServlet</servlet-name>
+    	<url-pattern>/token.do</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 下发短信接口 -->
+    <servlet>
+	   <servlet-name>SendMsgServlet</servlet-name>
+	   <servlet-class>com.newspace.payplatform.unicomsms.SendMsgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	   <servlet-name>SendMsgServlet</servlet-name>
+	   <url-pattern>/sendMsg.do</url-pattern>
+	</servlet-mapping>
+    
+  	  <!-- 联通支付接口 --> 
+	  <servlet>
+	    <servlet-name>UnicomPayServlet</servlet-name>
+	    <servlet-class>com.newspace.payplatform.unicomhttp.UnicomPayServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>UnicomPayServlet</servlet-name>
+	    <url-pattern>/unicompay.do</url-pattern>
+	  </servlet-mapping>
+	  
+	  
+	  <!-- 联通异步通知计费结果接口 -->
+	  <servlet>
+	  	<servlet-name>UnicomNotifyServlet</servlet-name>
+	  	<servlet-class>com.newspace.payplatform.unicomhttp.UnicomNotifyServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>UnicomNotifyServlet</servlet-name>
+	  	<url-pattern>/unicomNotify.do</url-pattern>
+	  </servlet-mapping>
+	  
+	  <!-- 生成订单号接口 -->
+	  <servlet>
+	    <servlet-name>GenerateOrderNoServlet</servlet-name>
+	    <servlet-class>com.newspace.payplatform.order.GenerateOrderNoServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>GenerateOrderNoServlet</servlet-name>
+	    <url-pattern>/generateOrderNo.do</url-pattern>
+	  </servlet-mapping>
+	  
+	  <!-- 确认订单接口 -->
+	  <servlet>
+	  	<servlet-name>ConfirmOrderServelt</servlet-name>
+	  	<servlet-class>com.newspace.payplatform.order.ConfirmOrderServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>ConfirmOrderServelt</servlet-name>
+	  	<url-pattern>/confirmOrder.do</url-pattern>
+	  </servlet-mapping>
+	 
+	 <!-- Cp查询订单信息接口 -->
+	 <servlet>
+	  <servlet-name>CpQueryOrderServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.order.CpQueryOrderServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+	   <servlet-name>CpQueryOrderServlet</servlet-name>
+	   <url-pattern>/cpQueryOrder.do</url-pattern>
+	 </servlet-mapping>
+	 
+	<!-- 盒子支付：获取验证码 -->
+	<servlet>
+	  <servlet-name>GetCheckCodeServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.tvbox.GetCheckCodeServlet</servlet-class>
+	</servlet>
+	  <servlet-mapping>
+	  <servlet-name>GetCheckCodeServlet</servlet-name>
+	  <url-pattern>/getCheckCode.do</url-pattern>
+	</servlet-mapping>
+  
+  	<!-- 盒子支付：校验支付 -->
+	<servlet>
+	  <servlet-name>VerifyCheckCodeServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.tvbox.VerifyCheckCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>VerifyCheckCodeServlet</servlet-name>
+	  <url-pattern>/verifyCheckCode.do</url-pattern>
+	</servlet-mapping>
+	
+	
+    <!-- 校验支付点接口 -->
+	<servlet>
+	  <servlet-name>VerifyPaypointServlet</servlet-name>
+	  <servlet-class>com.newspace.payplatform.paypoint.VerifyPaypointServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>VerifyPaypointServlet</servlet-name>
+	  <url-pattern>/verifyPayPoint.do</url-pattern>
+	</servlet-mapping>
+	
+  <!-- 查询已绑定的银行卡信息接口 -->
+  <servlet>
+    <servlet-name>QueryBoundCardInfoServlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.QueryBoundCardInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryBoundCardInfoServlet</servlet-name>
+    <url-pattern>/queryBoundCard.do</url-pattern>
+  </servlet-mapping>
+  
+  <!--快钱快捷支付动态获取验证码  -->
+  <servlet>
+    <servlet-name>GetDynNumServlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.GetDynNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetDynNumServlet</servlet-name>
+    <url-pattern>/getDynNum.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 快钱快捷支付第一次支付操作接口-->
+  <servlet>
+    <servlet-name>FirstQuickPaymentServlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.FirstQuickPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstQuickPaymentServlet</servlet-name>
+    <url-pattern>/firstQuickPayment.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 快钱快捷支付接口 -->
+  <servlet>
+    <servlet-name>QMQuickPaymentServlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.QMQuickPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QMQuickPaymentServlet</servlet-name>
+    <url-pattern>/quickPayment.do</url-pattern>
+  </servlet-mapping>
+
+  <!-- 异步接收TR3消息的接口 -->  
+  <servlet>
+    <servlet-name>ReceiveTR3AndSendTR4Servlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.ReceiveTR3AndSendTR4Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveTR3AndSendTR4Servlet</servlet-name>
+    <url-pattern>/receiveTr3.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 根据卡号查询卡信息接口 -->
+  <servlet>
+    <servlet-name>QueryCardInfoServlet</servlet-name>
+    <servlet-class>com.newspace.payplatform.qmshortcut.QueryCardInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryCardInfoServlet</servlet-name>
+    <url-pattern>/queryCardInfo.do</url-pattern>
+  </servlet-mapping>
+  
+<!-- 解绑银行卡接口 -->  
+<servlet>
+  <servlet-name>UnbindCardServlet</servlet-name>
+  <servlet-class>com.newspace.payplatform.qmshortcut.UnbindCardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>UnbindCardServlet</servlet-name>
+  <url-pattern>/unbindCard.do</url-pattern>
+</servlet-mapping>
+
+
+<!-- 同步游戏信息接口 -->
+<servlet>
+	<servlet-name>SyncGameInfoServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.syncgameinfo.SyncGameInfoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SyncGameInfoServlet</servlet-name>
+	<url-pattern>/gameInfo.do</url-pattern>
+</servlet-mapping>
+
+<!--接收支付宝异步通知接口 -->
+<servlet>
+	<servlet-name>ReceiveAlipayNotifyServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.alipay.ReceiveAlipayNotifyServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ReceiveAlipayNotifyServlet</servlet-name>
+	<url-pattern>/atetAlipayNotify.do</url-pattern>
+</servlet-mapping>
+
+<!-- 联通沃邮箱计费接口 -->
+<servlet>
+	<servlet-name>WopayServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.unicomwo.WopayServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WopayServlet</servlet-name>
+	<url-pattern>/unicomWoPay.do</url-pattern>
+</servlet-mapping>
+
+<!-- 联通沃邮箱二次确认接口 -->
+<servlet>
+	<servlet-name>WoConfirmServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.unicomwo.WoConfirmServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WoConfirmServlet</servlet-name>
+	<url-pattern>/confirm.do</url-pattern>
+</servlet-mapping>
+
+<!-- 联通沃邮箱查询交易轨迹接口 -->
+<servlet>
+	<servlet-name>WoTraceServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.unicomwo.WoTraceServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WoTraceServlet</servlet-name>
+	<url-pattern>/woplusTrace.do</url-pattern>
+</servlet-mapping>
+
+<!-- 联通IPTV异步通知接口 -->
+<servlet>
+	<servlet-name>UnicomIptvNotifyServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.unicomiptv.UnicomIptvNotifyServlet
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UnicomIptvNotifyServlet</servlet-name>
+	<url-pattern>/IptvNotify.do</url-pattern>
+</servlet-mapping>
+
+<!-- 联通沃橙异步通知接口 -->
+<servlet>
+	<servlet-name>WochengNotifyServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.wocheng.WochengNotifyServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WochengNotifyServlet</servlet-name>
+	<url-pattern>/wocNotify.do</url-pattern>
+</servlet-mapping>
+
+<!-- 获取某款设备的支付试方式-->
+<!-- 胡起立  2017年7月11日
+<servlet>
+	<servlet-name>payMethodServlet</servlet-name>
+	<servlet-class>com.newspace.payplatform.paytype.web.PayMethodServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>payMethodServlet</servlet-name>
+	<url-pattern>/paymethod.do</url-pattern>
+</servlet-mapping>
+	  -->
+<!-- 接口结束  -->
+	  
+	
+
+  	<welcome-file-list>
+    	<welcome-file>index.jsp</welcome-file>
+  	</welcome-file-list>
+</web-app>
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/entity
+END
+BankCardInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/entity/BankCardInfo.java
+END
+MyX509TrustManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/entity/MyX509TrustManager.java
+END
+MerchantInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/entity/MerchantInfo.java
+END
+BankAlias.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/qmshortcut/entity/BankAlias.java
+END

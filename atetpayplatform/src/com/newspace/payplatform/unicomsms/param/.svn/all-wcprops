@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param
+END
+BindTelUpstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/BindTelUpstreamContent.java
+END
+GetOrderNoDownstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/GetOrderNoDownstreamContent.java
+END
+UpstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/UpstreamContent.java
+END
+MsgPaymentUpstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/MsgPaymentUpstreamContent.java
+END
+GetOrderNoUpstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/GetOrderNoUpstreamContent.java
+END
+SendMsgReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/SendMsgReq.java
+END
+UpstreamData.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/UpstreamData.java
+END
+MsgPaymentDownstreamContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/param/MsgPaymentDownstreamContent.java
+END

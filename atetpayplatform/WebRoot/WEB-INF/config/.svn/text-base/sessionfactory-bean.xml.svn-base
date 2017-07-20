@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<!-- 自动扫描与装配bean -->
+	<context:component-scan base-package="com.newspace"></context:component-scan>
+	<!-- 处理clob字段 -->
+	<bean id="lobHandler" lazy-init="true"  class="org.springframework.jdbc.support.lob.DefaultLobHandler"/> 
+	
+	<!-- 配置SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- hibernate属性配置 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.jdbc.batch_size">25</prop>
+				<prop key="hibernate.query.factory_class">org.hibernate.hql.ast.ASTQueryTranslatorFactory</prop>
+				<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+			</props>
+		</property>
+		<!-- 映射文件配置 -->
+		<property name="mappingLocations">
+			<list>
+				<value>classpath*:com/newspace/**/*.hbm.xml</value>
+			</list>
+		</property>
+		<!-- 配置c3p0数据库连接池 -->
+		<property name="dataSource" ref="ds-config" />
+		<!-- 处理clob字段 -->
+		<property name="lobHandler" ref="lobHandler"/> 
+	</bean>
+</beans>

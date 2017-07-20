@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/paytype/web
+END
+PayMethodReqVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/paytype/web/PayMethodReqVo.java
+END
+PayMethodServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/paytype/web/PayMethodServlet.java
+END
+PayMethodData.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/paytype/web/PayMethodData.java
+END
+PayMethodRespVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/paytype/web/PayMethodRespVo.java
+END

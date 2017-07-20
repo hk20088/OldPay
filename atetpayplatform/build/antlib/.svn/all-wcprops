@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib
+END
+ganymed.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/ganymed.jar
+END
+svnClientAdapter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/svnClientAdapter.jar
+END
+svnkit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/svnkit.jar
+END
+svnant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/svnant.jar
+END
+jna.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/jna.jar
+END
+releaseversion.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/releaseversion.jar
+END
+svnjavahl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/build/antlib/svnjavahl.jar
+END

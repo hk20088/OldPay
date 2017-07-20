@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  					  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean name="baseDao" class="com.newspace.common.dao.impl.GenericDaoImpl" abstract="true">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean name="defaultDao" class="com.newspace.payplatform.base.DefaultDaoImpl" parent="baseDao"/>
+
+	<bean name="secretKeyDao" class="com.newspace.payplatform.secretkey.dao.impl.SecretKeyDaoImpl" parent="baseDao"/>
+	
+	<bean name="paymentOrderDao" class="com.newspace.payplatform.order.dao.impl.PaymentOrderDaoImpl" parent="baseDao"/>
+	
+	<bean name="bindTelephoneDao" class="com.newspace.payplatform.bindtelephone.dao.impl.BindTelephoneDaoImpl" parent="baseDao"/>
+	
+	<bean name="payPointDao" class="com.newspace.payplatform.paypoint.dao.impl.PayPointDaoImpl" parent="baseDao"/>
+	
+	<bean name="syncDeviceDao" class="com.newspace.payplatform.syncdevice.dao.impl.SyncDeviceDaoImpl" parent="baseDao"/>
+	
+	<bean name="syncGameDao" class="com.newspace.payplatform.syncgameinfo.dao.impl.SyncGameDaoImpl" parent="baseDao"/>
+	
+	<bean name="payTypeDao" class="com.newspace.payplatform.paytype.dao.impl.PayTypeDaoImpl" parent="baseDao"/>
+	
+</beans>

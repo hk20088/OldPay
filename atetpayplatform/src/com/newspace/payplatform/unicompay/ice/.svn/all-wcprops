@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice
+END
+GameWoVacReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/GameWoVacReq.java
+END
+_GameWoVacReqOperationsNC.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqOperationsNC.java
+END
+ReqVacBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/ReqVacBean.java
+END
+ResVacBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/ResVacBean.java
+END
+_GameWoVacReqDelD.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqDelD.java
+END
+Callback_GameWoVacReq_getVacReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/Callback_GameWoVacReq_getVacReq.java
+END
+GameWoVacReqPrx.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/GameWoVacReqPrx.java
+END
+GameWoVacReqHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/GameWoVacReqHolder.java
+END
+_GameWoVacReqDel.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqDel.java
+END
+_GameWoVacReqOperations.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqOperations.java
+END
+ReqVacBeanHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/ReqVacBeanHolder.java
+END
+GameWoVacReqPrxHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/GameWoVacReqPrxHelper.java
+END
+ResVacBeanHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/ResVacBeanHolder.java
+END
+GameWoVacReqPrxHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/GameWoVacReqPrxHolder.java
+END
+_GameWoVacReqDelM.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqDelM.java
+END
+_GameWoVacReqDisp.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicompay/ice/_GameWoVacReqDisp.java
+END

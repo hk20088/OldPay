@@ -1,0 +1,143 @@
+<project default="release" name="release project">
+	<property environment="env" />
+	<property name="project.name" value="atetpayplatform" />
+	<property name="project.short.name" value="atetpayplatform" />
+	<property name="svn.res" value="https://serversvn:838/svn/javaC" />
+	<property name="svn.trunk.path" value="${svn.res}/trunk" />
+	<property name="svn.branch.path" value="${svn.res}/branch" />
+	<property name="svn.release.path" value="${svn.res}/release" />
+	<property name="svn.user" value="huqili" />
+	<property name="svn.password" value="huqili" />
+	<property name="base.dir" value="../" />
+	<property name="temp" value="${base.dir}/temp" />
+	<property name="war.name" value="${project.name}.war" />
+	<property name="dir.db_script" value="db_script" />
+	<property name="dir.certificate" value="certificate"/>
+	<property name="dir.src" value="src" />
+	<property name="dir.web" value="WebRoot" />
+	<property name="dir.lib" value="${dir.web}/WEB-INF/lib" />
+	<property name="dir.compile_lib" value="compile_lib" />
+	<property name="dir.docs" value="docs" />
+	<property name="export.home" value="${temp}/${project.name}" />
+	<property name="mainVersion" value="1"/>
+	
+	<path id="svnant.lib">
+		<fileset dir="antlib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<taskdef name="version" classname="com.newspace.common.svnversion.VersionTask" classpathref="svnant.lib" />
+	<version versionfiledir="${base.dir}/${dir.db_script}/modify" refid="version" />
+	<property name="release.home" value="${temp}/release" />
+	
+	<path id="classpath">
+		<fileset dir="${export.home}/${dir.lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="compile_classpath">
+		<fileset dir="${export.home}/${dir.compile_lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpathref="svnant.lib"/>
+	<svnSetting id="svnparams" username="${svn.user}" password="${svn.password}" javahl="false"  svnkit="true" />
+	
+	<target name="init">
+		<svn refid="svnparams">
+			<cleanup dir="${base.dir}" />
+		</svn>
+		<echo>int dirs.........</echo>
+		<delete dir="${temp}" includeemptydirs="true" verbose="true" />
+	</target>
+	
+	<target name="export" depends="init">
+		<echo>export files from svn trunk........</echo>
+		<svn refid="svnparams">
+			<export srcUrl="${svn.trunk.path}/${project.name}" destPath="${export.home}" revision="HEAD" /> 
+		</svn>
+		<echo>export files finish........</echo>
+	</target>
+	
+	<target name="war" depends="export">
+		<echo>init release dirs</echo>
+		<mkdir dir="${release.home}/${dir.db_script}"/>
+		<mkdir dir="${release.home}/${dir.docs}"/>
+		<mkdir dir="${release.home}/temp" />
+		<mkdir dir="${release.home}/temp/WEB-INF" />
+		<mkdir dir="${release.home}/temp/WEB-INF/classes" />
+		<mkdir dir="${release.home}/temp/WEB-INF/lib" />
+		<echo>copy files to release dirs</echo>
+		<copy todir="${release.home}/${dir.db_script}">
+			<fileset dir="${export.home}/${dir.db_script}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${release.home}/${dir.docs}">
+			<fileset dir="${export.home}/${dir.docs}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${release.home}/${dir.certificate}">
+			<fileset dir="${export.home}/${dir.certificate}">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+		<copy todir="${release.home}/temp">
+			<fileset dir="${export.home}/${dir.web}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<svn refid="svnparams">
+			<cleanup dir="${base.dir}" />
+		</svn>
+		<echo>compile java file</echo>
+		<javac destdir="${release.home}/temp/WEB-INF/classes" srcdir="${export.home}/${dir.src}" includeantruntime="false"
+			encoding="utf-8" verbose="no" debug="true" fork="false" failonerror="false" nowarn="true">
+			<classpath refid="classpath" />
+			<classpath refid="compile_classpath" />
+		</javac>
+		<echo>cmpile java file finish.</echo>
+		<copy todir="${release.home}/temp/WEB-INF/classes">
+			<fileset dir="${export.home}/${dir.src}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<jar destfile="${release.home}/${war.name}" basedir="${release.home}/temp" index="true" />
+		<delete dir="${release.home}/temp" includeemptydirs="true" />
+	</target>
+	
+	<target name="branch" depends="war">
+		<echo>check in source file to branch</echo>
+		<svn refid="svnparams">
+			<!--
+			<copy message="create a branch" srcUrl="${svn.trunk.path}/${project.name}" 
+				destUrl="${svn.branch.path}/${project.name}/${version}"  makeParents="true" />
+			-->
+			<mkdir url="${svn.branch.path}/${project.name}/${version}" message="create branch project dir" 
+				makeParents="true" />
+			<import path="${export.home}" recurse="true" url="${svn.branch.path}/${project.name}/${version}" 
+				message="create a branch"/>
+		</svn>
+		<echo>copy source file to branch finish.</echo>
+	</target>
+	
+	<target name="release" depends="branch">
+		<echo>release project</echo>
+		<svn refid="svnparams">
+			<mkdir url="${svn.release.path}/${project.name}/${version}" message="create release project dir" 
+				makeParents="true" />
+			<import path="${release.home}" recurse="true" url="${svn.release.path}/${project.name}/${version}" 
+				message="commit release file to release path"/>
+		</svn>
+		<echo>release finish.</echo>
+		<delete dir="${temp}" includeemptydirs="true" />
+		<echo>release patch success.</echo>
+		<echo>project name:${project.name}</echo>
+		<echo>patch version :${version}</echo>
+		<echo>release path:${svn.release.path}/${project.name}/${version}</echo>
+		<echo>branch path:${svn.branch.path}/${project.name}/${version}</echo>
+	</target>
+</project>

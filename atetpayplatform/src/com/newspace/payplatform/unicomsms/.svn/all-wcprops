@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms
+END
+AssignSendMsgTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/AssignSendMsgTask.java
+END
+SendMsgTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/SendMsgTask.java
+END
+SmInt.ice
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/SmInt.ice
+END
+SendMsgServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/SendMsgServlet.java
+END
+ReceiveMsgServiceServant.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ReceiveMsgServiceServant.java
+END
+ReceiveSmsServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/ReceiveSmsServer.java
+END
+SendMsgClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomsms/SendMsgClient.java
+END

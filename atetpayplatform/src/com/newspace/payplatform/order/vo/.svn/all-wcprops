@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo
+END
+ConfirmOrderReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/ConfirmOrderReq.java
+END
+ConfirmOrderResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/ConfirmOrderResp.java
+END
+TerminalQueryOrderReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/TerminalQueryOrderReq.java
+END
+CpQueryOrderReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/CpQueryOrderReq.java
+END
+GenerateOrderNoResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/GenerateOrderNoResp.java
+END
+GenerateOrderNoReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/GenerateOrderNoReq.java
+END
+CpQueryOrderResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/CpQueryOrderResp.java
+END
+TerminalQueryOrderResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/TerminalQueryOrderResp.java
+END
+PaymentOrderVo.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/PaymentOrderVo.hbm.xml
+END
+PaymentOrderVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/order/vo/PaymentOrderVo.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv
+END
+IptvUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv/IptvUtils.java
+END
+IptvReturnCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv/IptvReturnCode.java
+END
+IptvRespVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv/IptvRespVo.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv/Test.java
+END
+UnicomIptvNotifyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/src/com/newspace/payplatform/unicomiptv/UnicomIptvNotifyServlet.java
+END

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>												   					
+	<class name="com.newspace.msgclient.entity.MsgEntity" table="t_payplatform_msg">
+		<id name="id" >
+			<column name="id" />
+			<generator class="sequence">
+				<param name="sequence">seq_payplatform_msg_id</param>
+			</generator>
+		</id>
+		
+		<property name="telephone" type="string"/>
+		<property name="content" type="string"/>
+		<property name="state" type="integer"/>
+		<property name="projectCode" type="integer"/>
+		<property name="createTime" type="timestamp"/>
+	</class>
+</hibernate-mapping>

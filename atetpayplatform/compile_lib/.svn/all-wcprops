@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/compile_lib
+END
+jsp-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/compile_lib/jsp-api.jar
+END
+javax.servlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/compile_lib/javax.servlet.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/T-one/!svn/ver/4759/trunk/atetpayplatform/compile_lib/servlet-api.jar
+END

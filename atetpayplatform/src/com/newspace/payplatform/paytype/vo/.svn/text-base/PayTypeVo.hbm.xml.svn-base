@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="com.newspace.payplatform.paytype.vo.PayTypeVo" table="t_payplatform_payType">
+			<id name="id">
+			<column name="id" />
+			<generator class="sequence">
+				<param name="sequence">seq_payplatform_payType_id</param>
+			</generator>
+			</id>
+		<property name="payTypeCode" />
+		<property name="payTypeName" />
+		<property name="state" />
+		
+		</class>
+
+</hibernate-mapping>

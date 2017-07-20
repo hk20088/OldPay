@@ -1,0 +1,44 @@
+10
+
+dir
+4759
+http://serversvn:888/svn/T-one/trunk/atetpayplatform/src/com/newspace/payplatform/bindtelephone
+http://serversvn:888/svn/T-one
+
+
+
+2017-01-13T13:47:07.078020Z
+4759
+huqili
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3403b0b7-e78c-ba4e-b9a4-a6926461bf5b
+
+
+
+
+
+
+0
+
+bo
+dir
+
+dao
+dir
+
+vo
+dir
+
